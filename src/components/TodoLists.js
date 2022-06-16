@@ -21,16 +21,13 @@ const TodoLists = () => {
     }, []);
 
 
-
     return (
         <>
             {
                 todos.map((todo) => {
-                    console.log(todo)
                     return (
                         <TodoCard key={todo?.id} title={todo?.title} decriptions={todo?.decriptions} />
                     )
-
                 })
             }
 

@@ -1,12 +1,11 @@
-import { Card, Heading, Paragraph} from "./styles"
+import { Card, Heading, Paragraph } from "./styles"
 
 const TodoCard = ({ title, decriptions }) => {
     return (
         <Card>
             <div>
-                <Heading><b>Title: { title }</b></Heading>
-                <Paragraph><b>Description: { decriptions }</b></Paragraph>
-                {/* <Nickname> { name }</Nickname> */}
+                <Heading><b>Title: {title}</b></Heading>
+                <Paragraph><b>Description: {decriptions}</b></Paragraph>
             </div>
         </Card>
     )
