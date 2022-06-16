@@ -1,13 +1,11 @@
 import { Card, Heading, Paragraph} from "./styles"
 
-
-
-const TodoCard = () => {
+const TodoCard = ({ title, decriptions }) => {
     return (
         <Card>
             <div>
-                <Heading><b>Title:</b></Heading>
-                <Paragraph><b>Description:</b></Paragraph>
+                <Heading><b>Title: { title }</b></Heading>
+                <Paragraph><b>Description: { decriptions }</b></Paragraph>
                 {/* <Nickname> { name }</Nickname> */}
             </div>
         </Card>
