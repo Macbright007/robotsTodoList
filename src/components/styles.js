@@ -39,25 +39,12 @@ export const CardHeader = styled.div`
 `
 
 export const Heading = styled.h4`
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
-    // height: 10px;
-    // margin-top: 120px;
     font-family: 'Handlee', cursive;
     font-size: 17px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 800;
  `;
 export const Paragraph = styled.p`
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
-    // height: 10px;
-    // margin-top: 120px;
-    // float: left;
     font-family: 'Handlee', cursive;
     font-size: 17px;
-    font-style: italic;
-    font-weight: 600;
  `;
