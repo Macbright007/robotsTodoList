@@ -21,14 +21,17 @@ const TodoLists = () => {
     }, []);
 
 
+    const handleDelete = async ({id}) => {
+        await Axios.delete(URL + id + '/');
+        setTodos(todos.filter((todo) => todo.id !== id))
+    }
 
     return (
         <>
             {
                 todos.map((todo) => {
-                    console.log(todo)
                     return (
-                        <TodoCard key={todo?.id} title={todo?.title} decriptions={todo?.decriptions} />
+                        <TodoCard key={todo?.id} title={todo?.title} decriptions={todo?.decriptions} todo={todo} handleDelete={handleDelete}/>
                     )
 
                 })

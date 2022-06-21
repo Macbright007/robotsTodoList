@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    // background: whitesmoke;
     background: linear-gradient(to right bottom, rgba(255,255, 255, 0.7),rgba(255,255, 255, 0.4));
     width: 100%;
     max-width: 600px;
@@ -24,13 +23,11 @@ export const Card = styled.div`
     width: 100%;
     max-width: 500px;
     margin: 40px auto;
-    // height: 30%;
     border: 3px solid black;
     border-left: 0;
     border-right: 0;
     border-radius: 15px;
     padding: 10px; 
-    // box-shadow: 4px 6px;
 `;
 
 export const CardHeader = styled.div`
@@ -43,8 +40,62 @@ export const Heading = styled.h4`
     font-size: 17px;
     font-style: italic;
     font-weight: 800;
+    display: flex;
+    justify-content: space-between;
  `;
 export const Paragraph = styled.p`
     font-family: 'Handlee', cursive;
     font-size: 17px;
  `;
+
+export const Form = styled.form`
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+
+    button{
+        width:100%;
+        max-width: 300px;
+        margin: 0px 60px;
+        padding: 10px;
+        background: rgb(147, 126, 3);
+        color: white;
+        font-weight: 700;
+        border: none;
+    }
+    button:hover{
+        cursor: pointer;
+        background: rgb(63, 54, 2);
+    }
+`
+
+export const InnerForm = styled.div`
+    padding: 20px;
+
+    label{
+        color: grey;
+        font-weight: 700;
+    }
+    input{
+        border-radius: 7px;
+        border: 2px solid grey;
+        padding: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    input:focus{
+        outline: none;
+    }
+
+    textarea{
+            border-radius: 7px;
+            border: 2px solid grey;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+    }
+    textarea:focus{
+        outline: none;  
+    }
+`
